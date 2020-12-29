@@ -1,0 +1,61 @@
+html {
+    font-size:10px;
+    background: url("./background.png");
+    background-size: cover;
+}
+
+body, html {                                    /* */
+    font-family: sans-serif;
+}
+
+.keys {
+    display:flex;   /*use flexbox*/
+    flex: 1;    
+    min-height: 88vh;              /*adjust height of object related to  view port*/
+    align-items: flex-end;         /*move keys to bottom*/
+    justify-content: center;        /*justify each key inside*/
+
+}
+
+.key {
+    border: 0.4rem solid rgba(255,255,255,0.7);         /*set border*/       
+    border-radius: 1rem;                          /*set border corner radius*/
+    padding: 1rem 1rem;             /*set distance of border from content */
+    margin: 1rem;                       /*set margin from adjacent object*/
+    width:  8rem;                       /*set object width*/
+    background: rgba(0,0,0,0.4);       /*set object background -- transparent*/  
+    font-size: 1.5rem;                  
+    text-align:center;
+    color: whitesmoke;
+    text-shadow: 0 0 0.8rem slategrey;              
+    transition: all .07s;
+}
+
+kbd {
+    display: block;
+    font-size: 4rem;
+}
+
+
+.playing {
+    transform: scale(1.1);          /*make larger box for short time when active*/
+    border-color: #ffc600;         /*change border color when active*/
+    box-shadow: 0 0 1rem #ffc600;   /*add shadow for highlight*/
+  }
+
+.sound {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    letter-spacing: 0.1rem;         /*make good space between letters*/
+    color:#ffc600;
+}
+
+footer {
+    font-size: 1.0rem;
+    color: whitesmoke;
+}
+
+a {
+    color: white;
+    text-decoration: bold underline;
+}
